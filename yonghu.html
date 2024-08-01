@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+form span{width:100px;
+		text-align:left;
+		display:inline-block;
+		}
+div{border-radius:20px;
+	border:2px solid #3FF;
+	width:500px;
+	margin:auto;}
+h3{height: 40px;
+	padding-left: 15px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	background:linear-gradient(#0FC,#0CF);
+	margin:0px 0px;
+}
+fieldset{border: none;
+		border-top:2px solid #000;}
+	.w{text-align: center;
+		margin: 20px auto;}
+
+		
+</style>
+</head>
+
+<body>
+<div>
+<h3>反馈表单</h3>
+<form action="yonghu.jsp" method="post">
+	<fieldset>
+    <legend>基本信息</legend>
+  		<p><span>姓名:</span><input type="text" name="name" autofocus ></p>
+  		
+  		  <p> <label for="password">密码：</label>
+    		<input type="text" id="password" name="password">
+    		<span id="passwordError" class="error"></span><br>
+    	</p>
+    	
+		<p>
+    		<label for="confirmPassword">重复密码：</label>
+    		<input type="text" id="confirmPassword" name="confirmPassword">
+    		<span id="confirmPasswordError" class="error"></span><br>
+		</p> 
+  		  
+		<p><span>性别：</span><input type="radio"  name="gender" value="男" id="nan">
+			<label for="nan">男</label>
+    		<input type="radio"  name="gender" value="女" id="nv">
+			<label for="nv">女</label>
+		</p>
+    	
+  
+   
+   </fieldset>
+ <fieldset>
+ <legend>详细信息</legend>
+ 内容：
+<textarea cols="60" rows="8" placeholder="详细内容" name="details"></textarea>
+											   </fieldset>
+											   
+    <p class="w"><input class="w" type="submit" value="提交">
+       <input class="w" type="reset"  value="重置">
+	</p>
+    
+
+</form>
+
+</div>
+</body>
+</html>

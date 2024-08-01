@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加油站</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 80%;
+          margin: auto;
+         
+        }
+    
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+
+           text-align: center;
+        }
+    
+        th {
+          background-color: #f2f2f2;
+        }
+        div{
+	border-radius:20px;
+	border:2px solid #3FF;
+	width:500px;
+	height: 400px;
+	margin:auto;
+	}
+	h2{border: none;
+		border-top:2px solid #000;
+		text-align: center;}
+	p{
+		border-top: 10px;
+
+	}
+	.w{text-align: center;
+		text-align: center;
+    margin-top: 20px;}
+    span{
+		display: inline-block;
+        width: 100px;
+          margin-left: 20px;
+          margin-top: 10px;
+	}
+	.j{display: inline-block;
+          margin-left: 20px;
+          }
+
+      </style>
+</head>
+<body>
+	<div>
+    <h2>加油站</h2>
+
+  <table>
+    <tr>
+      <th>汽油类型</th>
+      <th>单价（元/升）</th>
+    </tr>
+    <tr>
+      <td>92号</td>
+      <td>7.31</td>
+    </tr>
+    <tr>
+      <td>95号</td>
+      <td>7.79</td>
+    </tr>
+    <tr>
+      <td>98号</td>
+      <td>8.77</td>
+    </tr>
+  </table>
+    <form action="jiayou.jsp" method="post"  >
+        <p><span>汽油类型：</span>
+            <input type="radio" name="gasoline" value="92">
+            <label for="92" >92号</label>
+            <input type="radio" name="gasoline" value="95">
+            <label for="95">95号</label>
+            <input type="radio" name="gasoline" value="98">
+            <label for="98">98号</label>
+
+          </p>
+          
+        <p class="j">加油量：
+            <input type="text" name="quantity" placeholder="请输入加油量"> 
+        </p >
+        <p class="w">
+            <input type="submit" value="立即充值">
+            <input type="reset" value="重置表单">
+        </p>
+    </form>
+	</div>
+</body>
+</html>

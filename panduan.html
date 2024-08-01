@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户判断</title>
+    <link rel="stylesheet" type="text/css" >
+</head>
+<body>
+
+<form id="myForm" onsubmit="return validateForm()" href="panduan.jsp">
+    <label for="name">姓名：</label>
+    <input type="text" id="name" name="name">
+    <span id="nameError" class="error"></span><br>
+
+    <label for="password">密码：</label>
+    <input type="password" id="password" name="password">
+    <span id="passwordError" class="error"></span><br>
+
+    <label for="confirmPassword">重复密码：</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+    <span id="confirmPasswordError" class="error"></span><br>
+
+    <label>性别：</label>
+    <input type="radio" id="male" name="sex" value="male">男
+    <input type="radio" id="female" name="sex" value="female">女
+    <span id="sexError" class="error"></span><br>
+
+    <input type="submit" value="提交">
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+form span{width:100px;
+		text-align:left;
+		display:inline-block;
+		}
+div{border-radius:20px;
+	border:2px solid rgb(255, 128, 192);
+	width:500px;
+	margin:auto;}
+h3{height: 40px;
+	text-align: center;
+	padding-left: 15px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	background:linear-gradient(rgb(255, 128, 192),rgb(255, 255, 255));
+	margin:0px 0px;
+}
+fieldset{border: none;
+		border-top:2px solid #000;}
+	.w{text-align: center;
+		margin: 20px auto;}
+	
+			
+</style>
+</head>
+<body>
+<div>
+	<h3>个人信息设置</h3>
+	<form action="exa_2.jsp" method="post">
+		<p><span>用户名:</span><input type="text" id="username" name="username" required></p>
+        <p><span>密码:</span><input type="password" id="password" name="password" required></p>
+        <p><span>重复密码:</span><input type="password" id="confirmPassword" name="confirmPassword" required></p>
+        
+		<p><span>性别：</span><input type="radio"  name="gender" value="男" id="nan">
+			<label for="nan">男</label>
+    		<input type="radio"  name="gender" value="女" id="nv">
+			<label for="nv">女</label>
+		</p>
+		<p><span>生日：</span><input type="date" name="registrationDate" ></p>
+		<p><span>性格:</span>
+			<input type="checkbox" name="xingge" value="温柔" id="wenrou">
+			<label for="温柔">温柔</label>
+      		<input type="checkbox" name="xingge" value="开朗" id="kailang">
+			<label for="开朗">开朗</label>
+      		<input type="checkbox" name="xingge" value="活泼" id="huopo">
+			<label for="活泼">活泼</label>
+			<input type="checkbox" name="xingge" value="内向" id="neixiang">
+			<label for="内向">内向</label>
+			<input type="checkbox" name="xingge" value="沉默" id="chenmo">
+			<label for="沉默">沉默</label>
+			<input type="checkbox" name="xingge" value="急躁" id="jizao">
+			<label for="急躁">急躁</label>
+    </p>
+    <p><span>教育程度:</span>
+    <select name="district">
+        	<option value="小学">小学</option>
+            <option value="初中">初中</option>
+            <option value="高中">高中</option>
+            <option value="本科">本科</option>
+        	<option value="研究生">研究生</option>
+	  </select>
+    </p>
+    <fieldset>
+ <legend>个人简介</legend>
+ 内容：
+<textarea cols="60" rows="8" placeholder="详细内容" name="details"></textarea>
+											   </fieldset>
+
+
+<p class="w"><span id="passwordError" class="error"></span>
+		<input class="w" type="submit" value="提交">
+       	<input class="w" type="reset"  value="重置">
+</p>
+	</form>
+</div>
+</body>
+</html>

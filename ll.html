@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户信息</title>
+</head>
+<body>
+    <h1>用户信息</h1>
+    <form action="userInfo.jsp" method="post">
+        <label for="name">姓名：</label>
+        <input type="text" name="name" required><br>
+        
+        <label for="password">密码：</label>
+    	<input type="password" id="password" name="password
+    	<span id="passwordError" class="error"></span><br>
+
+    	<label for="confirmPassword">重复密码：</label>
+    	<input type="password" id="confirmPassword" name="confirmPassword">
+    	<span id="confirmPasswordError" class="error"></spa><br>
+
+
+        <label for="gender">性别：</label>
+        <input type="radio" name="gender" value="male"> 男
+        <input type="radio" name="gender" value="female"> 女<br>
+
+        <label for="interests">兴趣爱好：</label>
+        <input type="checkbox" name="interests" value="football"> 足球
+        <input type="checkbox" name="interests" value="hiking"> 爬山
+        <input type="checkbox" name="interests" value="swimming"> 游泳<br>
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
